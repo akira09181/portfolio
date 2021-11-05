@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block header %}
+<h1>投資シミュレーション</h1>
+{% endblock header %}
+{% block content %}
+<table border="2">
+<th>日時</th>
+<th>始値</th>
+<th>高値</th>
+<th>安値</th>
+<th>終値</th>
+<th>出来高</th>
+{% for i in value %}
+<tr>
+
+    <td>{{i.5}}</td>
+    <td>{{i.4}}</td>
+    <td>{{i.3}}</td>
+    <td>{{i.2}}</td>
+    <td>{{i.1}}</td>
+    <td>{{i.0}}</td>
+
+</tr>
+{% endfor %}
+</table>
+
+{% endblock content %}
